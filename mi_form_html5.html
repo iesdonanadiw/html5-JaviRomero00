@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Básicos</title>
+</head>
+<body>
+    <form action="html5-formularios.html" method="get" autocomplete>
+        <h3>Nombre y apellidos:</h3>
+            <label>Nombre: <input name="nombre" type="text" value="" readonly disabled size="40" maxlength="10" pattern="[A-Za-z]{3}"
+            placeholder="Nombre"></label>
+
+            <label>Apellidos: <input name="apellidos" type="text" value="" readonly disabled size="40" maxlength="30" pattern="[A-Za-z]{3}"
+            placeholder="Apellidos"></label>
+
+        <h3>Genero</h3>
+            <input type="radio" name="gender" value="male"> Masculino
+            <br>
+            <input type="radio" name="gender" value="female"> Femenino
+            <br>
+            <input type="radio" name="gender" value="nobinary"> No binario
+            <br>
+            <input type="radio" name="gender" value="other"> Otros
+        <h3>Fecha de Nacimiento</h3>
+            <label>Fecha: <input type="date" name="bday" min="1900-01-02"></label>
+        <h3>Email</h3>
+            <label>Email: <input type="email" name="email" autocomplete="off"></label>
+        <h3>Algún dato a tener en cuenta:</h3>
+            <textarea name="message" rows="10" cols="30">
+            </textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
